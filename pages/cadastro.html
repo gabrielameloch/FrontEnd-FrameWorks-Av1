@@ -1,0 +1,50 @@
+<!-- Cadastro com um formulário simples para receber novidades do site
+ Forms com - nome, email... -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas Deliciosas - Cadastro</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Cadastro de Usuário</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="recipes.html">Receitas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main>
+      <section class="cadastro">
+        <h2>Faça seu cadastro</h2>
+        <form action="#" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required />
+
+          <input type="submit" value="Cadastrar" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2024 Receitas Deliciosas - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

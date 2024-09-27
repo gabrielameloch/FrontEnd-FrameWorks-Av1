@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Cor de fundo clara */
+  color: #333; /* Cor de texto */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333; /* Cor do cabeçalho */
+  color: #fff; /* Cor do texto */
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seção de Receitas */
+.recipes {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.recipes h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.recipe {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.recipe h3 {
+  margin-bottom: 10px;
+  color: #007bff; /* Cor do título das receitas */
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
