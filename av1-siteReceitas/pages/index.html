@@ -1,0 +1,294 @@
+<!-- Home - página principal com as receitas mais recentes
+ 
+ importante comentar cada seção do código e as alterações 
+ que cada um de nós fizer pra gente não se confundir e fazer besteira,
+ e também pra gente entender onde cada parte do site tá sendo
+ feita -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toque Gourmet - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1 class="titleHome">Toque Gourmet</h1>
+      <nav>
+        <ul id="navBar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Receitas</a></li>
+          <li><a href="about.html">Sobre</a></li>
+
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seção de Receitas -->
+    <!-- Bootstrap Carousel -->
+    <div id="carouselReceitas" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicadores (pontos de navegação) -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselReceitas"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselReceitas"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselReceitas"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselReceitas"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselReceitas"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselReceitas"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+
+      <!-- Conteúdo do Carrossel -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img
+            src="/assets/lasanha.jpg"
+            class="d-block w-100"
+            alt="Receita 1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lasanha à Bolonhesa</h5>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="/assets/camaraoIntern.jpeg"
+            class="d-block w-100"
+            alt="Receita 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Camarão Internacional</h5>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img
+            src="/assets/carbonara.jpg"
+            class="d-block w-100"
+            alt="Receita 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Carbonara</h5>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img
+            src="/assets/bruscheta.jpg"
+            class="d-block w-100"
+            alt="Receita 4"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Bruscheta</h5>
+          </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <img
+            src="/assets/cookies.jpg"
+            class="d-block w-100"
+            alt="Receita 5"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cookies de Nutella</h5>
+          </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <img src="/assets/asinha.jpg" class="d-block w-100" alt="Receita 6" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Asinhas de Frango</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles do Carrossel (anterior/próximo) -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselReceitas"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselReceitas"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <!-- destaque p/ categoria de receitas -->
+    <section id="categorias" class="container mt-5">
+      <h2 class="text-center">Principais Categorias</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="categoria">
+            <img src="/assets/lasanha.jpg" class="img-fluid" alt="Massas" />
+            <h5 class="text-center">Massas</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="categoria">
+            <img
+              src="/assets/starawberryCake.jpg"
+              class="img-fluid"
+              alt="Sobremesas"
+            />
+            <h5 class="text-center">Sobremesas</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="categoria">
+            <img
+              src="/assets/bruscheta.jpg"
+              class="img-fluid"
+              alt="Aperitivos"
+            />
+            <h5 class="text-center">Aperitivos</h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="categoria">
+            <img
+              src="/assets/paoDeQueijo.jpg"
+              class="img-fluid"
+              alt="Saladas"
+            />
+            <h5 class="text-center">Pães</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="receitas-populares" class="container mt-5">
+      <h2 class="text-center">Receitas Populares</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/strogono.jpg"
+              class="card-img-top"
+              alt="Strogonoff de Frango"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Strogonoff de Frango</h5>
+              <p class="card-text">
+                Uma receita rápida e deliciosa de strogonoff.
+              </p>
+              <a href="#" class="btn btn-primary">Ver receita</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="/assets/boloChocolate.jpg"
+              class="card-img-top"
+              alt="Bolo de Chocolate"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Chocolate</h5>
+              <p class="card-text">
+                O bolo de chocolate mais fofinho que você vai provar.
+              </p>
+              <a href="#" class="btn btn-primary">Ver receita</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/assets/cookies.jpg" class="card-img-top" alt="cookies" />
+            <div class="card-body">
+              <h5 class="card-title">Cookies de Nutella</h5>
+              <p class="card-text">Um delicioso cookie de Nutella quentinho.</p>
+              <a href="#" class="btn btn-primary">Ver receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2024 Toque Gourmet - Todos os direitos reservados</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <button
+      id="backToTop"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #576b48;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      "
+    >
+      ↑ Voltar ao Topo
+    </button>
+  </body>
+</html>

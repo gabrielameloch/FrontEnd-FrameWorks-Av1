@@ -1,0 +1,369 @@
+/* Reset básico */
+
+:root {
+  --primary-color: #d4cdbd;
+  --secondary-color: #76805d;
+  --text-color: #fff;
+  --font-family: "Raleway", sans-serif; /*font-weight depende do lugar que vai ser usado*/
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--primary-color); /* Cor do fundo da página*/
+  color: var(--text-color); /* Cor de texto */
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--secondary-color); /* Cor do cabeçalho */
+  color: var(--text-color); /* Cor do texto */
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-family);
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.titleHome,
+.titleAbout,
+.titleCadastro,
+.titleRecipes {
+  font-weight: 400;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  padding: 1px;
+}
+
+#navBar li {
+  display: inline;
+  margin-right: 15px;
+  position: relative;
+}
+
+#navBar a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s, trasnform 0.3s; /*transições*/
+}
+
+#navBar a:hover {
+  color: #ffcc00;
+  transform: scale(1.1); /*aumenta o tamanho do link*/
+}
+
+/* recipes section */
+
+#carouselReceitas {
+  width: 70%; /* argura do carrossel */
+  margin: 0 auto; /* centraliza */
+}
+
+.carousel-item img {
+  height: 400px; /* Altura do carrossel ajustada */
+  object-fit: cover; /* Para cobrir o espaço sem distorção */
+}
+
+/*estilização da faixa acima do titulo*/
+
+h2.text-center {
+  position: relative;
+  margin: 50px 0;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--text-color);
+  width: 70%;
+  margin: 50px auto; /*centraliza o titulo e a faixa*/
+}
+
+h2.text-center::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #576b48;
+  border-radius: 2px;
+}
+
+/*estilização das categorias de comida*/
+
+#categorias {
+  margin: 50px 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#categorias .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#categorias .categoria {
+  flex: 1 1 22%;
+  max-width: 22%;
+  min-width: 200px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#categorias .categoria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#categorias .categoria img:hover {
+  transform: scale(1.05);
+}
+
+#categorias h5 {
+  text-align: center;
+  min-height: 40px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+}
+
+/*estilização para receitas populares*/
+#receitas-populares {
+  margin-top: 50px;
+}
+
+#receitas-populares .card {
+  margin-bottom: 30px;
+  transition: transforms 0.2s ease;
+}
+
+#receitas-populares .card:hover {
+  transform: scale(1.05);
+}
+
+#receitas-populares .card img {
+  border-radius: 10px 10px 0 0;
+}
+#receitas-populares .card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+#receitas-populares .card-text {
+  font-size: 0.9em;
+  color: #666;
+}
+
+#receitas-populares .btn-primary {
+  background-color: #576b48;
+  border-color: #cadaa0;
+}
+
+#receitas-populares .btn-primary:hover {
+  background-color: #ff5722;
+  border-color: none;
+}
+/* Rodapé */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/*estilização do about*/
+
+main {
+  padding: 20px;
+}
+.about,
+.team,
+.mission,
+.contact {
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  font-family: var(--font-family);
+  align-content: center;
+  width: 80%;
+  max-width: 900px;
+  background-color: #faf7fe;
+  color: #76805d;
+}
+.aboutTitle,
+.teamTitle,
+.missionTitle,
+.contactTitle,
+.titleCatalogo {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 200;
+  color: #76805d;
+}
+.team-member {
+  margin-bottom: 15px;
+}
+
+/*estilização das recipes*/
+
+.recipeCard {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*sombra ao card*/
+}
+
+.recipeCard {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipeCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipeCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /*ajusta p cobrir o espaço todo*/
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.recipeCard:hover img {
+  transform: scale(1);
+}
+
+.recipeCard h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #76805d;
+}
+
+.containerRecipes {
+  padding: 20px;
+}
+
+/* estilização do forms */
+
+.cadastro {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);
+}
+
+.cadastro h2 {
+  text-align: center;
+  color: #76805d;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+}
+
+.formCadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #76805d;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #576b48;
+}
+
+/* Adiciona responsividade */
+@media (max-width: 768px) {
+  .cadastro {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+#backToTop {
+  display: block !important; /* Forçar a exibição do botão para teste */
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 200;
+}
